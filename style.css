@@ -1,0 +1,123 @@
+html,body{
+    padding:0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+.section1{
+    position: relative;
+    min-height: 100%;
+    background-image: url(./images/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div_text{
+    padding: 10px 20px;
+   top: 10%;
+   color: #fff;
+   margin-left: 25px;
+   position: absolute;
+   font-size: 35px;
+   letter-spacing: 1px;
+}
+.hii,.web{
+    font-size: 55px;
+    color: rgb(197, 93, 19);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 1px 2px rgb(237, 153, 92);
+}
+.section2{
+    padding: 25px 12%;
+ min-height: 300px;
+ background-color: rgb(70, 72, 74);
+ color: #fff;
+ font-size: 20px;
+}
+.section2 h2{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(176, 14, 100);
+    text-shadow: 2px 1px 2px rgb(242, 68, 227);
+
+}
+.section2 ul{
+    font-style: oblique;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.back{
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(14, 149, 187);
+    font-style: normal;
+
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+    padding: 50px 40px;
+    margin-left: 7%;
+}
+.card{
+    max-width: 330px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px grey;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-30px);
+}
+.text_content {
+    padding: 2px 3px;
+    text-align: center;
+}
+.section4{
+    /* padding: 40px 0; */
+   display: flex;
+   margin-top: 10px;
+   /* justify-content: space; */
+}
+
+.contact{
+    background-image: linear-gradient(to right,rgb(19, 82, 124),rgb(125, 136, 233));
+width: 50%;
+} 
+.about{
+    background-image: linear-gradient(to right,rgb(145, 9, 34),rgb(232, 94, 117));
+    width: 50%;
+    } 
+    .contact,.about{
+        min-height: 200px;
+        padding: 25px;
+        color: #fff;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+    footer{
+        background-color: rgb(79, 82, 82);
+        color:rgb(238, 228, 219);
+        font-style: italic;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .button{
+        
+        display: flex;
+        justify-content: right;
+    }
+.sign_in{
+    cursor: pointer;
+    font-size: 20px;
+    margin:15px 20px 0 0;
+    border: none;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(to right,rgb(202, 12, 81),rgb(232, 127, 206));  
+}
+.sign_in:hover{
+    background-image:linear-gradient(to right,rgb(50, 149, 185),rgb(92, 121, 144));  
+}
+

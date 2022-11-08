@@ -1,0 +1,93 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(130, 166, 152, 0.87);
+}
+.container{
+    
+    height: 100vh;
+    margin: 0 auto;
+}
+.job_form{
+    background-color: white;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgb(2, 2, 2,0.1);
+    border-radius: 10px;
+}
+.job_form h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(112, 8, 157) ;
+    text-shadow:2px 1px 2px rgb(107, 181, 224) ;
+}
+.job_form span{
+    font-size: 22px;
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:20px
+}
+.form_step{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 18px;
+    font-weight:550;
+}
+input,textarea,select{
+    padding:6px 10px;
+    margin-top: 2px;
+    border: 1px solid rgb(198, 197, 197);
+    border-radius: 5px;
+    font-size: 15px; 
+    box-shadow:2px 3px 4px rgb(207, 197, 197); ;   
+}
+select,textarea,input:focus{
+    outline-color: rgb(182, 60, 119);
+}
+.button{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+.button button{
+    background-image: linear-gradient(to right,rgb(12, 87, 163),rgb(52, 170, 238));
+    padding: 7px 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px rgb(151, 148, 148);
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    margin-top: 10px;
+}
+button:hover{
+    color: rgb(70, 65, 65);
+    transition: 0.4s ease-out;
+    border: 1px solid rgb(12, 87, 163);
+    background-image: linear-gradient(to left,rgb(151, 147, 147),rgb(173, 170, 170));
+}
+.text_area{
+    grid-column: 1/span 2;
+}
+.text_area textarea{
+    width: 100%;
+}
+@media(max-width:650px){
+    .text_area{
+        grid-column: 1/span 2;
+    }
+}
+#jobrole option{
+    background-color: rgb(152, 140, 140);
+    color: aliceblue;
+}
